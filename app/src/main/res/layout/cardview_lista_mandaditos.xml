@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    android:layout_marginBottom="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/id_imagen_mandaditos"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_menu_camera"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            >
+            <TextView
+                android:id="@+id/id_nombre_mandaditos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jorge Aldrin Cruz Rodriguez"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/id_status_mandaditos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disponible"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/id_color_status_mandaditos"
+                    android:layout_width="10dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/activoboton"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
