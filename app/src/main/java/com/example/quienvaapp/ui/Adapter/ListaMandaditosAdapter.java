@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 import com.example.quienvaapp.MainActivity;
+import com.example.quienvaapp.MenuPrincipalFragment;
 import com.example.quienvaapp.R;
 import com.example.quienvaapp.ui.Dto.ListaMandaditosDTO;
 import com.squareup.*;
@@ -25,11 +26,10 @@ import java.util.List;
 public class ListaMandaditosAdapter extends RecyclerView.Adapter<ListaMandaditosAdapter.ListaMandaditosHolder> {
     private List<ListaMandaditosDTO>list;
     private Context context;
-    private MainActivity mainActivity;
-    public ListaMandaditosAdapter(List<ListaMandaditosDTO>list, Context context,MainActivity mainActivity){
+    public ListaMandaditosAdapter(List<ListaMandaditosDTO>list, Context context){
         this.list=list;
         this.context=context;
-        this.mainActivity=mainActivity;
+
     }
 
     @NonNull
